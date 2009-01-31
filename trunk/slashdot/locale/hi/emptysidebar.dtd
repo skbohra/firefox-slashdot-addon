@@ -1,15 +1,1 @@
-<!ENTITY emptysidebar.title "स्लेशडोट न्यूज़">
-<!ENTITY openEmptySidebar.commandkey "E">
-<!ENTITY openEmptySidebar.modifierskey "shift accel">
-<!ENTITY menuitem.option1 "All Headlines">
-<!ENTITY menuitem.option2 "Apple">
-<!ENTITY menuitem.option3 "Hardware">
-<!ENTITY menuitem.option4 "IT">
-<!ENTITY menuitem.option5 "Linux">
-<!ENTITY menuitem.option6 "Mobile">
-<!ENTITY menuitem.option7 "Politics">
-<!ENTITY button.button1 "Refresh">
-<!ENTITY button.button2 "Search">
-<!ENTITY label.headline "Select a topic:">
-
 
