@@ -1,0 +1,8 @@
+content	slashdot	content/
+locale	slashdot	en-US	locale/en-US/
+locale	slashdot	hi	locale/hi/
+skin	slashdot	classic/1.0	skin/
+skin	emptysidebar	classic/1.0	chrome/skin/
+overlay	chrome://browser/content/browser.xul	chrome://slashdot/content/firefoxOverlay.xul
+overlay	chrome://browser/content/browser.xul	chrome://slashdot/content/slashDot.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://slashdot/skin/overlay.css

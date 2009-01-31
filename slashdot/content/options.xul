@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://slashdot/locale/prefwindow.dtd">
+<prefwindow id="slashdotPreferences" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" title="&prefwindow.title;">
+  <prefpane id="pane1" label="&pane1.title;">
+    <preferences>
+            <preference id="stringpref1" name="general.useragent.locale" type="string"/> <!-- note that this is only an ASCII string - use unichar for unicode strings -->
+    </preferences>
+
+
+<label value="&pref.question1;"/>
+
+ <menulist oncommand="doNav(this);" id="menulistslash" preference="stringpref1">
+    <menupopup>
+ <menuitem label="&language.pref1;" value="en-US"/>
+ <menuitem label="&language.pref2;" value="hi"/> 
+
+     </menupopup>
+  </menulist>
+
+<label value="&pref.question2;"/>
+
+ <menulist oncommand="doNav(this);" id="menulistslash">
+    <menupopup>
+ <menuitem label="&menuitem.option1;" value="http://www.geekybuddha.org/techkritit/main.html"/>
+      <menuitem label="&menuitem.option2;" value="http://www.geekybuddha.org/techkritit/apple.html"/>
+      <menuitem label="&menuitem.option3;" value="http://www.geekybuddha.org/techkritit/hardware.html"/>
+      <menuitem label="&menuitem.option4;" value="http://www.geekybuddha.org/techkritit/it.html"/>
+      <menuitem label="&menuitem.option5;" value="http://www.geekybuddha.org/techkritit/linux.html"/>
+      <menuitem label="&menuitem.option6;" value="http://www.geekybuddha.org/techkritit/mobile.html"/>
+      <menuitem label="&menuitem.option7;" value="http://www.geekybuddha.org/techkritit/politics.html"/>
+    
+     </menupopup>
+  </menulist>
+
+
+
+  </prefpane>
+
+
+<script>
+
+function doNav(obj){
+  var url = obj.selectedItem.value;
+  // note the firstChild is the menupopup element
+pref("general.useragent.locale", url);
+}
+
+</script>
+
+</prefwindow>
+
+
+

@@ -1,0 +1,5 @@
+<!ENTITY slashdot.label "Slashdot News Sidebar">
+<!ENTITY slashdotContext.label "Slashdot News">
+<!ENTITY slashdotContext.accesskey "Y">
+<!ENTITY slashdotToolbar.label "Slashdot News">
+<!ENTITY slashdotToolbar.tooltip "Slashdot News">

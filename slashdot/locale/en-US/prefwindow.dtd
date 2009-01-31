@@ -1,0 +1,19 @@
+<!ENTITY prefwindow.title "slashdot preferences">
+<!ENTITY pane1.title "slashdot preferences">
+<!ENTITY checkboolpref.label "A Boolean Preference">
+<!ENTITY checkboolpref.accesskey "B">
+<!ENTITY intpref.label "An Integer Preference">
+<!ENTITY intpref.accesskey "I">
+<!ENTITY stringpref.label "A String Preference">
+<!ENTITY stringpref.accesskey "S">
+<!ENTITY language.pref1 "Engilsh US">
+<!ENTITY language.pref2 "हिन्दी">
+<!ENTITY menuitem.option1 "All Headlines">
+<!ENTITY menuitem.option2 "Apple">
+<!ENTITY menuitem.option3 "Hardware">
+<!ENTITY menuitem.option4 "IT">
+<!ENTITY menuitem.option5 "Linux">
+<!ENTITY menuitem.option6 "Mobile">
+<!ENTITY menuitem.option7 "Politics">
+<!ENTITY pref.question1 "Choose your Default Language">
+<!ENTITY pref.question2 "Choose your defaut topic">
