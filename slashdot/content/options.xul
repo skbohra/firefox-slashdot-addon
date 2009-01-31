@@ -14,7 +14,7 @@
 <menulist oncommand="changeLocale()" id="menulistslash">
     <menupopup>
  <menuitem label="hindi" value="hi"/>
- <menuitem label="Engilsh" value="en"/>
+ <menuitem label="Engilsh" value="en-GB"/>
      
 
      </menupopup>
