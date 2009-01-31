@@ -1,8 +1,5 @@
 /* This is just an example.  You shouldn't do this. */
-#slashdot-hello
-{
-  color: red ! important;
-}
+
 #slashdot-toolbar-button
 {
   list-style-image: url("chrome://slashdot/skin/toolbar-button.png");
