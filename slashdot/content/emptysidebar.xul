@@ -28,11 +28,11 @@
 <hbox>
   <spacer flex="1"/>
   <textbox type="autocomplete" autocompletesearch="history" id="search-item"/>
-  <button label="&button.button2;" oncommand="doNav3();"/>
+  <button label="&button.button2;" oncommand="doNav3(event);"/>
 </hbox>
 
 <script>
-function doNav3(){
+function doNav3(event){
   var search = document.getElementById("search-item").value;
   window._content.document.location  = "http://www.google.com";
 alert("anh");
