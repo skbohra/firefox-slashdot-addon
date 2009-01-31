@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<!DOCTYPE page SYSTEM "chrome://slashdot/locale/emptysidebar.dtd">
+
+<page id="sbEmptySidebar" title="&emptysidebar.title;"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+<image src="http://www.geekybuddha.org/techkritit/logo.png" width="251" height="41"/>
+<label value="&label.headline;"/>
+ <menulist oncommand="doNav(this);" id="menulistslash">
+    <menupopup>
+ <menuitem label="&menuitem.option1;" value="http://www.geekybuddha.org/techkritit/main.html"/>
+      <menuitem label="&menuitem.option2;" value="http://www.geekybuddha.org/techkritit/apple.html"/>
+      <menuitem label="&menuitem.option3;" value="http://www.geekybuddha.org/techkritit/hardware.html"/>
+      <menuitem label="&menuitem.option4;" value="http://www.geekybuddha.org/techkritit/it.html"/>
+      <menuitem label="&menuitem.option5;" value="http://www.geekybuddha.org/techkritit/linux.html"/>
+      <menuitem label="&menuitem.option6;" value="http://www.geekybuddha.org/techkritit/mobile.html"/>
+      <menuitem label="&menuitem.option7;" value="http://www.geekybuddha.org/techkritit/politics.html"/>
+     
+
+     </menupopup>
+  </menulist>
+
+<hbox flex="1" pack="left">
+<iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="10" height="100px" showcaret="true"/>
+
+</hbox>
+
+<hbox>
+  <spacer flex="1"/>
+  <button label="&button.button1;" oncommand="doNav2();"/>
+  <button label="&button.button2;" />
+</hbox>
+
+<script>
+
+function doNav(obj){
+  var url = obj.selectedItem.value;
+  // note the firstChild is the menupopup element
+  document.getElementById('content-body').setAttribute('src', url);
+}
+
+function doNav2(){
+
+document.getElementById('content-body').contentDocument.location.reload(true);
+}
+
+
+function doNav1(url1){
+  // note the firstChild is the menupopup element
+  document.getElementById('content-body').setAttribute('src', url1);
+}
+
+
+</script>
+
+</page>
