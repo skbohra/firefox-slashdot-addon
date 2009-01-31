@@ -11,5 +11,8 @@
 <!ENTITY button.button1 "ताज़ा करें">
 <!ENTITY button.button2 "खोजें">
 <!ENTITY label.headline "एक विषय चुनिए:">
+<!ENTITY menuitem1.option1 "Slashdot.org">
+<!ENTITY menuitem1.option2 "Thinkgeek.com">
+
 
 
