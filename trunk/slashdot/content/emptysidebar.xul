@@ -19,15 +19,18 @@
      </menupopup>
   </menulist>
 
-<hbox flex="1" pack="left">
-<iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="10" height="100px" showcaret="true"/>
+<vbox flex="1" pack="left">
+<iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="1" />
+</vbox>
 
+<hbox flex="1" pack="left">
+<iframe id="content-body1" src="http://www.geekybuddha.org/techkritit/thinkgeek.html" flex="1" />
 </hbox>
 <vbox>
   <hbox>
     <vbox>
       <spacer flex="1" />
-      <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="15"/>
+      <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="10"/>
     </vbox>
     <vbox>
       <menulist oncommand="doNav3(this);" id="menulistslash">
