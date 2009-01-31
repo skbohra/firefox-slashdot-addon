@@ -1,6 +1,10 @@
 content	slashdot	content/
 locale	slashdot	en-US	locale/en-US/
 locale	slashdot	hi	locale/hi/
+locale	slashdot	de-DE	locale/de-DE/
+locale	slashdot	en-GB	locale/en-GB/
+locale 	slashdot	fr-FR	locale/fr-FR/
+
 skin	slashdot	classic/1.0	skin/
 skin	emptysidebar	classic/1.0	chrome/skin/
 overlay	chrome://browser/content/browser.xul	chrome://slashdot/content/firefoxOverlay.xul
