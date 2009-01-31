@@ -23,10 +23,13 @@
 <iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="10" height="100px" showcaret="true"/>
 
 </hbox>
-
 <hbox>
- 
-  <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="15"/>
+<spacer flex="1"/>
+<button image="http://www.geekybuddha.org/techkritit/Refresh.png" width="12" height="12" oncommand="doNav2();" />
+</hbox>
+<hbox>
+
+  <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="13"/>
   <button label="&button.button2;" oncommand="doNav3(event);"/>
 </hbox>
 
@@ -34,7 +37,7 @@
 
 function doNav3(event){
   var search = document.getElementById("search-item").value;
-  window._content.document.location  = "http://www.google.com";
+  window._content.document.location  = "http://news.slashdot.org/search.pl?query=" + encodeURI(search);
 
 }
 
