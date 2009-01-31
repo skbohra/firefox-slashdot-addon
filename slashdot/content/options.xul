@@ -2,7 +2,7 @@
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <!DOCTYPE window SYSTEM "chrome://slashdot/locale/LocaleSwitchDemo.dtd">
 <window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-        title="Locale Switch Demo"
+        title="Locale Switch"
 	sizemode="normal"
 	orient="vertical"
 		style="margin: 0px; -moz-box-align: center"
@@ -14,7 +14,7 @@
 <menulist oncommand="changeLocale()" id="menulistslash">
     <menupopup>
  <menuitem label="hindi" value="hi"/>
- <menuitem label="Engilsh" value="en-GB"/>
+ <menuitem label="Engilsh" value="en-US"/>
      
 
      </menupopup>

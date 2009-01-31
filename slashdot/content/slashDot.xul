@@ -20,6 +20,7 @@
                  autoCheck="false"
                  type="checkbox"
                  group="sidebar"
+		 fixed="true"
                  sidebarurl="chrome://slashdot/content/emptysidebar.xul"
                  sidebartitle="&emptysidebar.title;"
                  oncommand="toggleSidebar('viewEmptySidebar');" />
