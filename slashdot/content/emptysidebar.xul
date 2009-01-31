@@ -30,17 +30,26 @@
       <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="15"/>
     </vbox>
     <vbox>
-      <button label="&button.button1;" oncommand="doNav2();" />
-      <button label="&button.button2;" oncommand="doNav3(event);"/>
+      <menulist oncommand="doNav3(this);" id="menulistslash">
+        <menupopup>
+          <menuitem label="&menuitem1.option1;" value="Slashdot"/>
+          <menuitem label="&menuitem1.option2;" value="Thinkgeek"/>
+        </menupopup>
+      </menulist>     
     </vbox>
   </hbox>
 </vbox>
+  
 <script>
+<![CDATA[
 
-function doNav3(event){
+function doNav3(obj){
+  var url = obj.selectedItem.value;
   var search = document.getElementById("search-item").value;
+if(url=='Slashdot')
   window._content.document.location  = "http://news.slashdot.org/search.pl?query=" + encodeURI(search);
-
+else
+  window._content.document.location  = "http://www.thinkgeek.com/brain/whereisit.cgi?t="+encodeURI(search)+"&x=0&y=0";
 }
 
 
@@ -61,7 +70,7 @@ function doNav1(url1){
   document.getElementById('content-body').setAttribute('src', url1);
 }
 
-
+]]>
 </script>
 
 </page>
