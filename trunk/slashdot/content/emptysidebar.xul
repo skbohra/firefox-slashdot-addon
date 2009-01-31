@@ -25,7 +25,7 @@
 </hbox>
 <hbox>
 <spacer flex="1"/>
-<button image="http://www.geekybuddha.org/techkritit/Refresh.png" width="12" height="12" oncommand="doNav2();" />
+<button label="Refresh" oncommand="doNav2();" />
 </hbox>
 <hbox>
 
