@@ -20,7 +20,6 @@
   </menulist>
 
 <hbox flex="1" pack="left">
- 
 <iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="10" height="100px" showcaret="true"/>
 
 </hbox>
@@ -32,13 +31,12 @@
 </hbox>
 
 <script>
+
 function doNav3(event){
   var search = document.getElementById("search-item").value;
   window._content.document.location  = "http://www.google.com";
-alert("anh");
+
 }
-
-
 
 
 function doNav(obj){
@@ -62,3 +60,4 @@ function doNav1(url1){
 </script>
 
 </page>
+
