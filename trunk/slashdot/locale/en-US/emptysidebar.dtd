@@ -1,15 +1,15 @@
-<!ENTITY emptysidebar.title "Slashdot News">
-<!ENTITY openEmptySidebar.commandkey "E">
-<!ENTITY openEmptySidebar.modifierskey "shift accel">
-<!ENTITY menuitem.option1 "All Headlines">
-<!ENTITY menuitem.option2 "Apple">
-<!ENTITY menuitem.option3 "Hardware">
-<!ENTITY menuitem.option4 "IT">
-<!ENTITY menuitem.option5 "Linux">
-<!ENTITY menuitem.option6 "Mobile">
-<!ENTITY menuitem.option7 "Politics">
-<!ENTITY button.button1 "Refresh">
-<!ENTITY button.button2 "Search">
-<!ENTITY label.headline "Select a topic:">
+<!ENTITY emptysidebar.title "स्लेशडोट समाचार">
+<!ENTITY openEmptySidebar.commandkey "ई">
+<!ENTITY openEmptySidebar.modifierskey "शिफ्ट कंट्रोल">
+<!ENTITY menuitem.option1 "मुख्य समाचार">
+<!ENTITY menuitem.option2 " एप्पल">
+<!ENTITY menuitem.option3 "हार्डवेयर">
+<!ENTITY menuitem.option4 "आई.टी.">
+<!ENTITY menuitem.option5 "लिनिक्स">
+<!ENTITY menuitem.option6 "मोबाइल">
+<!ENTITY menuitem.option7 "राजनीती">
+<!ENTITY button.button1 "ताज़ा करें">
+<!ENTITY button.button2 "खोजें">
+<!ENTITY label.headline "एक विषय चुनिए:">
 
 
