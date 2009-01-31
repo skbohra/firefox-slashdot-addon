@@ -23,16 +23,18 @@
 <iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="10" height="100px" showcaret="true"/>
 
 </hbox>
-<hbox>
-<spacer flex="1"/>
-<button label="Refresh" oncommand="doNav2();" />
-</hbox>
-<hbox>
-
-  <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="13"/>
-  <button label="&button.button2;" oncommand="doNav3(event);"/>
-</hbox>
-
+<vbox>
+  <hbox>
+    <vbox>
+      <spacer flex="1" />
+      <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="15"/>
+    </vbox>
+    <vbox>
+      <button label="&button.button1;" oncommand="doNav2();" />
+      <button label="&button.button2;" oncommand="doNav3(event);"/>
+    </vbox>
+  </hbox>
+</vbox>
 <script>
 
 function doNav3(event){
