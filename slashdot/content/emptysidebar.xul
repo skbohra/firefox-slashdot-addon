@@ -25,8 +25,8 @@
 </hbox>
 
 <hbox>
-  <spacer flex="1"/>
-  <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="10"/>
+ 
+  <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="15"/>
   <button label="&button.button2;" oncommand="doNav3(event);"/>
 </hbox>
 
