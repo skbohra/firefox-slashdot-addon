@@ -5,6 +5,7 @@
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
 <image src="http://www.geekybuddha.org/techkritit/logo.png" width="251" height="41"/>
 <label value="&label.headline;"/>
+<box>
  <menulist oncommand="doNav(this);" id="menulistslash">
     <menupopup>
  <menuitem label="&menuitem.option1;" value="http://www.geekybuddha.org/techkritit/main.html"/>
@@ -18,19 +19,17 @@
 
      </menupopup>
   </menulist>
-
-<vbox flex="1" pack="left">
-<iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="1" />
-</vbox>
-
+</box>
 <hbox flex="1" pack="left">
-<iframe id="content-body1" src="http://www.geekybuddha.org/techkritit/thinkgeek.html" flex="1" />
+<iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="10" height="100px" showcaret="true"/>
+
 </hbox>
+<box>
 <vbox>
   <hbox>
     <vbox>
       <spacer flex="1" />
-      <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="10"/>
+      <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="7"/>
     </vbox>
     <vbox>
       <menulist oncommand="doNav3(this);" id="menulistslash">
@@ -42,7 +41,7 @@
     </vbox>
   </hbox>
 </vbox>
-  
+</box>  
 <script>
 <![CDATA[
 
