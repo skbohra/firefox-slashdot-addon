@@ -26,6 +26,7 @@
 </hbox>
 <box>
 <vbox>
+  <separator class="groove-thin"/>
   <hbox>
     <vbox>
       <spacer flex="1" />
@@ -36,10 +37,17 @@
         <menupopup>
           <menuitem label="&menuitem1.option1;" value="Slashdot"/>
           <menuitem label="&menuitem1.option2;" value="Thinkgeek"/>
+          <menuitem label="&menuitem1.option3;" value="Google"/>
+          <menuitem label="&menuitem1.option4;" value="Youtube"/>
+          <menuitem label="&menuitem1.option5;" value="Wiki"/>
+          <menuitem label="&menuitem1.option6;" value="Creative"/>
+          <menuitem label="&menuitem1.option7;" value="Msn"/>  
+          <menuitem label="&menuitem1.option8;" value="Yahoo"/>
         </menupopup>
       </menulist>     
     </vbox>
   </hbox>
+  <separator class="groove" orient="horizontal" />
 </vbox>
 </box>  
 <script>
@@ -50,8 +58,20 @@ function doNav3(obj){
   var search = document.getElementById("search-item").value;
 if(url=='Slashdot')
   window._content.document.location  = "http://news.slashdot.org/search.pl?query=" + encodeURI(search);
-else
+else if(url=='Google')
+  window._content.document.location = "http://www.google.co.in/search?hl=en&q="+encodeURI(search)+"&btnG=Google+Search&meta=";	
+else if(url=='Thinkgeek')
   window._content.document.location  = "http://www.thinkgeek.com/brain/whereisit.cgi?t="+encodeURI(search)+"&x=0&y=0";
+else if(url=='Youtube')
+  window._content.document.location = "http://in.youtube.com/results?search_type=&search_query="+encodeURI(search);
+else if(url=='Wiki')
+  window._content.document.location = "http://en.wikipedia.org/wiki/"+encodeURI(search);
+else if(url=='Creative')
+  window._content.document.location = "http://creativecommons.org/?s="+encodeURI(search);
+else if(url=='Msn')
+  window._content.document.location = "http://search.msn.com/results.aspx?q="+encodeURI(search)+"&FORM=MSNH11";
+else
+  window._content.document.location ="http://in.search.yahoo.com/search?fr=yfp-t-in&type=ds&p="+encodeURI(search);
 }
 
 

@@ -13,6 +13,14 @@
 <!ENTITY label.headline "Select One Topic:">
 <!ENTITY menuitem1.option1 "Slashdot.org">
 <!ENTITY menuitem1.option2 "Thinkgeek.com">
+<!ENTITY menuitem1.option3 "Google.com">
+<!ENTITY menuitem1.option4 "Youtube.com">
+<!ENTITY menuitem1.option5 "Wikipedia.org">
+<!ENTITY menuitem1.option6 "Creative Commons.org">
+<!ENTITY menuitem1.option7 "MSN.com">
+<!ENTITY menuitem1.option8 "Yahoo.com">
+
+
 
 
 
