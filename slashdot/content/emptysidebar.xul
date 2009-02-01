@@ -35,6 +35,7 @@
     <vbox>
       <menulist oncommand="doNav3(this);" id="menulistslash">
         <menupopup>
+          <menuitem label="&menuitem1.option0;" value="Search here..."/>		
           <menuitem label="&menuitem1.option1;" value="Slashdot"/>
           <menuitem label="&menuitem1.option2;" value="Thinkgeek"/>
           <menuitem label="&menuitem1.option3;" value="Google"/>
@@ -56,6 +57,12 @@
 function doNav3(obj){
   var url = obj.selectedItem.value;
   var search = document.getElementById("search-item").value;
+if(!search)
+{
+alert("Please write keyword and select a webservice");
+}
+else
+{
 if(url=='Slashdot')
   window._content.document.location  = "http://news.slashdot.org/search.pl?query=" + encodeURI(search);
 else if(url=='Google')
@@ -70,11 +77,11 @@ else if(url=='Creative')
   window._content.document.location = "http://creativecommons.org/?s="+encodeURI(search);
 else if(url=='Msn')
   window._content.document.location = "http://search.msn.com/results.aspx?q="+encodeURI(search)+"&FORM=MSNH11";
-else
+else if(url=='Yahoo')
   window._content.document.location ="http://in.search.yahoo.com/search?fr=yfp-t-in&type=ds&p="+encodeURI(search);
 }
 
-
+}
 function doNav(obj){
   var url = obj.selectedItem.value;
   // note the firstChild is the menupopup element
