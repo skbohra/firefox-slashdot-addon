@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://slashdot/locale/LocaleSwitchDemo.dtd">
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="Locale Switch"
+	sizemode="normal"
+	orient="vertical"
+		style="margin: 0px; -moz-box-align: center"
+	>
+
+<script type="application/x-javascript" src="LocaleSwitchDemo.js"/>
+
+
+<menulist oncommand="changeLocale()" id="menulistslash">
+    <menupopup>
+ <menuitem label="hindi" value="hi"/>
+ <menuitem label="Engilsh" value="en-US"/>
+     
+
+     </menupopup>
+  </menulist>
+
+
+
+
+
+<button label="&switchLocale.button;" oncommand="changeLocale()" style="margin: 10px"/>
+
+</window>
+	
