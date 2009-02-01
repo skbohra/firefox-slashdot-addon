@@ -1,0 +1,18 @@
+<!ENTITY emptysidebar.title "Slashdot News">
+<!ENTITY openEmptySidebar.commandkey "E">
+<!ENTITY openEmptySidebar.modifierskey "Shift Ctrl">
+<!ENTITY menuitem.option1 "Headlines">
+<!ENTITY menuitem.option2 " Apple News">
+<!ENTITY menuitem.option3 "Hardware News">
+<!ENTITY menuitem.option4 "I.T. News">
+<!ENTITY menuitem.option5 "Linux News">
+<!ENTITY menuitem.option6 "Mobiles News">
+<!ENTITY menuitem.option7 "Political News">
+<!ENTITY button.button1 "Refresh">
+<!ENTITY button.button2 "Search">
+<!ENTITY label.headline "Select One Topic:">
+<!ENTITY menuitem1.option1 "Slashdot.org">
+<!ENTITY menuitem1.option2 "Thinkgeek.com">
+
+
+

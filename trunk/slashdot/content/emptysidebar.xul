@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<!DOCTYPE page SYSTEM "chrome://slashdot/locale/emptysidebar.dtd">
+
+<page id="sbEmptySidebar" title="&emptysidebar.title;"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" >
+<image src="http://www.geekybuddha.org/techkritit/logo.png" width="251" height="41"/>
+<label value="&label.headline;"/>
+<box>
+ <menulist oncommand="doNav(this);" id="menulistslash">
+    <menupopup>
+ <menuitem label="&menuitem.option1;" value="http://www.geekybuddha.org/techkritit/main.html"/>
+      <menuitem label="&menuitem.option2;" value="http://www.geekybuddha.org/techkritit/apple.html"/>
+      <menuitem label="&menuitem.option3;" value="http://www.geekybuddha.org/techkritit/hardware.html"/>
+      <menuitem label="&menuitem.option4;" value="http://www.geekybuddha.org/techkritit/it.html"/>
+      <menuitem label="&menuitem.option5;" value="http://www.geekybuddha.org/techkritit/linux.html"/>
+      <menuitem label="&menuitem.option6;" value="http://www.geekybuddha.org/techkritit/mobile.html"/>
+      <menuitem label="&menuitem.option7;" value="http://www.geekybuddha.org/techkritit/politics.html"/>
+     
+
+     </menupopup>
+  </menulist>
+</box>
+<hbox flex="1" pack="left">
+<iframe id="content-body" src="http://www.geekybuddha.org/techkritit/main.html" flex="10" height="100px" showcaret="true"/>
+
+</hbox>
+<box>
+<vbox>
+  <hbox>
+    <vbox>
+      <spacer flex="1" />
+      <textbox type="autocomplete" autocompletesearch="history" id="search-item" size="7"/>
+    </vbox>
+    <vbox>
+      <menulist oncommand="doNav3(this);" id="menulistslash">
+        <menupopup>
+          <menuitem label="&menuitem1.option1;" value="Slashdot"/>
+          <menuitem label="&menuitem1.option2;" value="Thinkgeek"/>
+        </menupopup>
+      </menulist>     
+    </vbox>
+  </hbox>
+</vbox>
+</box>  
+<script>
+<![CDATA[
+
+function doNav3(obj){
+  var url = obj.selectedItem.value;
+  var search = document.getElementById("search-item").value;
+if(url=='Slashdot')
+  window._content.document.location  = "http://news.slashdot.org/search.pl?query=" + encodeURI(search);
+else
+  window._content.document.location  = "http://www.thinkgeek.com/brain/whereisit.cgi?t="+encodeURI(search)+"&x=0&y=0";
+}
+
+
+function doNav(obj){
+  var url = obj.selectedItem.value;
+  // note the firstChild is the menupopup element
+  document.getElementById('content-body').setAttribute('src', url);
+}
+
+function doNav2(){
+
+document.getElementById('content-body').contentDocument.location.reload(true);
+}
+
+
+function doNav1(url1){
+  // note the firstChild is the menupopup element
+  document.getElementById('content-body').setAttribute('src', url1);
+}
+
+]]>
+</script>
+
+</page>
+
