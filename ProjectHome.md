@@ -1,0 +1,1 @@
+This project aims to make a rich firefox addon for Slashdot.org, we are making it to participate in techkriti 09
